@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "lint": "eslint *.js",
+    "lint": "eslint index.js",
     "cest": "jest --collectCoverage",
-    "lint:fix": "eslint *.js --fix"
+    "lint:fix": "eslint index.js --fix"
   },
   "repository": {
     "type": "git",

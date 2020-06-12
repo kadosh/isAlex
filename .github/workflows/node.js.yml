@@ -11,7 +11,11 @@ jobs:
     - uses: actions/checkout@v2
     - run: npm ci
     - run: npm run lint
-    - run: npm test
+    - run: npm run cest
     - uses: codecov/codecov-action@v1
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
+    - uses: mikeal/merge-release@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}

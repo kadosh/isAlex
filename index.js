@@ -1,5 +1,5 @@
 function isAlex (input) {
-  return input === 'Alex'
+  return input === 'Alex';
 }
 
-module.exports = isAlex
+module.exports = isAlex;
